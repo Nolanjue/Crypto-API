@@ -1,0 +1,37 @@
+{
+    "bitcoin": {
+      "usd": 25837,
+      "usd_market_cap": 502911173396.7725,
+      "usd_24h_vol": 11781474814.798132,
+      "usd_24h_change": -1.0901547388487052,
+      "last_updated_at": 1692736051
+    },
+    "busd": {
+      "usd": 1,
+      "usd_market_cap": 0,
+      "usd_24h_vol": 925930.6197176438,
+      "usd_24h_change": null,
+      "last_updated_at": 1692735969
+    },
+    "dogecoin": {
+      "usd": 0.062051,
+      "usd_market_cap": 8729008091.439274,
+      "usd_24h_vol": 271901611.67152023,
+      "usd_24h_change": -1.0094093340285164,
+      "last_updated_at": 1692736048
+    },
+    "ethereum": {
+      "usd": 1630.91,
+      "usd_market_cap": 196042730653.75412,
+      "usd_24h_vol": 6158606080.245525,
+      "usd_24h_change": -2.566541879561984,
+      "last_updated_at": 1692736045
+    },
+    "tether": {
+      "usd": 0.999728,
+      "usd_market_cap": 82830825712.10402,
+      "usd_24h_vol": 12910710951.704199,
+      "usd_24h_change": -0.02092219376732383,
+      "last_updated_at": 1692735900
+    }
+  }
