@@ -5,14 +5,16 @@ const fetchData = ()=> {
 
         const container = document.querySelector('.container');
         container.innerHTML = ''//display nothing so that it dosent add more html
-        const coins = Object.getOwnPropertyNames(json);//get the list of object names of the dictionary
+        const coins = Object.getOwnPropertyNames(json);
 
-        for(let coin of coins){//useful if you have identical object  data for a certain item. 
-            const coinInfo = json[coin]//represents the object index in the dictionary as an array, so 1: bitcoin, 2:busd
-//we loop through the names of the objects, i.e bitcoin, and then we basically get the values from that object. 
+        for(let coin of coins){//we can have loops if the objects have identical  datafor a certain item. 
+            const coinInfo = json[coin]
+
             
             const price  = coinInfo.usd;
             const change = coinInfo.usd_24h_change.toFixed(5);
+                        /*I would change the css of the container below, especially the placement of the condition here, 
+                        it should be in the spans(coin-price), or I could  use classlist. */
             container.innerHTML += `
                 <div class = 'coin ${change < 0 ? 'falling': 'rising'}'>
                     <div class ='coin-logo'>
@@ -21,7 +23,7 @@ const fetchData = ()=> {
                     <div class = 'coin-name'>
                         <h3>${coin}</h3>
                     </div>
-                    <div class = 'coin-price'>
+                    <div class = coin-price'>
                         <span class = 'price'> Price: $${price}<span>
                         <span class = 'change' > change: $${change}<span>
                     </div>
